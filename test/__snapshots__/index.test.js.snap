@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`acorn do expression let x = do {
+  let tmp = f();
+  tmp * tmp + 1
+}; 1`] = `
+Node {
+  "declarations": Array [
+    Node {
+      "end": 47,
+      "id": Node {
+        "end": 5,
+        "name": "x",
+        "start": 4,
+        "type": "Identifier",
+      },
+      "init": Node {
+        "body": Node {
+          "body": Array [
+            Node {
+              "declarations": Array [
+                Node {
+                  "end": 28,
+                  "id": Node {
+                    "end": 22,
+                    "name": "tmp",
+                    "start": 19,
+                    "type": "Identifier",
+                  },
+                  "init": Node {
+                    "arguments": Array [],
+                    "callee": Node {
+                      "end": 26,
+                      "name": "f",
+                      "start": 25,
+                      "type": "Identifier",
+                    },
+                    "end": 28,
+                    "start": 25,
+                    "type": "CallExpression",
+                  },
+                  "start": 19,
+                  "type": "VariableDeclarator",
+                },
+              ],
+              "end": 29,
+              "kind": "let",
+              "start": 15,
+              "type": "VariableDeclaration",
+            },
+            Node {
+              "end": 45,
+              "expression": Node {
+                "end": 45,
+                "left": Node {
+                  "end": 41,
+                  "left": Node {
+                    "end": 35,
+                    "name": "tmp",
+                    "start": 32,
+                    "type": "Identifier",
+                  },
+                  "operator": "*",
+                  "right": Node {
+                    "end": 41,
+                    "name": "tmp",
+                    "start": 38,
+                    "type": "Identifier",
+                  },
+                  "start": 32,
+                  "type": "BinaryExpression",
+                },
+                "operator": "+",
+                "right": Node {
+                  "end": 45,
+                  "raw": "1",
+                  "start": 44,
+                  "type": "Literal",
+                  "value": 1,
+                },
+                "start": 32,
+                "type": "BinaryExpression",
+              },
+              "start": 32,
+              "type": "ExpressionStatement",
+            },
+          ],
+          "end": 47,
+          "start": 11,
+          "type": "BlockStatement",
+        },
+        "end": 0,
+        "start": 8,
+        "type": "",
+      },
+      "start": 4,
+      "type": "VariableDeclarator",
+    },
+  ],
+  "end": 48,
+  "kind": "let",
+  "start": 0,
+  "type": "VariableDeclaration",
+}
+`;
+
+exports[`acorn do expression let x = do { h() } 1`] = `
+Node {
+  "declarations": Array [
+    Node {
+      "end": 18,
+      "id": Node {
+        "end": 5,
+        "name": "x",
+        "start": 4,
+        "type": "Identifier",
+      },
+      "init": Node {
+        "body": Node {
+          "body": Array [
+            Node {
+              "end": 16,
+              "expression": Node {
+                "arguments": Array [],
+                "callee": Node {
+                  "end": 14,
+                  "name": "h",
+                  "start": 13,
+                  "type": "Identifier",
+                },
+                "end": 16,
+                "start": 13,
+                "type": "CallExpression",
+              },
+              "start": 13,
+              "type": "ExpressionStatement",
+            },
+          ],
+          "end": 18,
+          "start": 11,
+          "type": "BlockStatement",
+        },
+        "end": 0,
+        "start": 8,
+        "type": "",
+      },
+      "start": 4,
+      "type": "VariableDeclarator",
+    },
+  ],
+  "end": 18,
+  "kind": "let",
+  "start": 0,
+  "type": "VariableDeclaration",
+}
+`;
